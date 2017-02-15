@@ -44,13 +44,13 @@ void CJugador::Mover(BufferedGraphics ^buffer, Bitmap ^imgPersonaje){
 		break;
 
 	case Direccion::Izquierda:
-		indiceY = 1;
+		indiceY = 0; //indiceY = 1;
 		indiceX = (indiceX >= 0 & indiceX < 2) ? indiceX + 1 : 0;
 		dx = -5; dy = -0; ultima = Izquierda;
 		break;
 
 	case Direccion::Derecha:
-		indiceY = 2;
+		indiceY = 0; //indiceY = 2;
 		indiceX = (indiceX >= 0 & indiceX < 2) ? indiceX + 1 : 0;
 		dx = +5; dy = 0; ultima = Derecha;
 		break;
