@@ -16,7 +16,7 @@ namespace RiverRaider {
 	public ref class ViewRiverRaider : public System::Windows::Forms::Form
 	{
 	public:
-		CJugador *oNave = new CJugador(50,150);
+		CJugador *oNave = new CJugador(150,0);
 		Graphics ^g;
 		BufferedGraphicsContext ^espacio;
 		BufferedGraphics ^buffer;
@@ -92,11 +92,11 @@ namespace RiverRaider {
 
 		switch (e->KeyCode)
 		{
-		case Keys::Up:
-			oNave->direccion = Direccion::Arriba; break;
+		//case Keys::Up:
+		//	oNave->direccion = Direccion::Arriba; break;
 
-		case Keys::Down:
-			oNave->direccion = Direccion::Abajo; break;
+		//case Keys::Down:
+		//	oNave->direccion = Direccion::Abajo; break;
 
 		case Keys::Left:
 			oNave->direccion = Direccion::Izquierda; break;
